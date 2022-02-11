@@ -1,3 +1,3 @@
-import { createContext } from "react";
-export const  DataPokemonContext = createContext({});
-export const  SearchContext = createContext({});
+import { createContext } from 'react';
+export const PokemonContext = createContext({});
+export const SearchContext = createContext({});

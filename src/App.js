@@ -1,11 +1,14 @@
 import { BrowserRouter as Router } from 'react-router-dom';
-import ContentApp from './pages/ContentApp';
+import { PokemonContextProvider } from './context/PokemonContext';
+import AppRoutes from './routes/AppRoutes';
 
 function App() {
   return (
-    <Router>
-      <ContentApp />
-    </Router>
+    <PokemonContextProvider>
+      <Router>
+        <AppRoutes />
+      </Router>
+    </PokemonContextProvider>
   );
 }
 
